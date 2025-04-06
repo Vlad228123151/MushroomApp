@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MushroomApp.Views.AddMushroomPage"
+             Title="Добавить гриб">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Entry x:Name="NameEntry" Placeholder="Название" />
+            <Entry x:Name="LatinEntry" Placeholder="Латинское название" />
+            <Editor x:Name="DescEditor" Placeholder="Описание" HeightRequest="100"/>
+            <Entry x:Name="ImagePathEntry" Placeholder="Путь к изображению" />
+
+            <Button Text="Сохранить" Clicked="OnSaveClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
